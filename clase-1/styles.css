@@ -5,11 +5,21 @@ En este ejemplo, le quita los margencitos predeterminados a todo el doc .*/
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /*Este es el control de las medidas de la cajita. Respeta las medidas y acomoda todo lo demás adentro.*/
+}
+
+/*CSS de la fuente que importé dede Google Fonts, sirve de guia para ponerlo en la cajita que requiera.*/
+.parkinsans-fuente {
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 /*Selector de tipo ETIQUETA. Dice que a todo lo que sea (en este caso body) body aplicará las condiciones de estilo*/
 body{
     background-color:#44BBEB;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 20px;
+    font-style: normal;
 }
 
 main{
@@ -19,11 +29,12 @@ main{
 
 h1{
     color: white;
+    text-align: center;
 }
 
 /*Selector de tipo CLASE*/
 .tarjeta{
-    width: 320px; /*controla el ancho de la cajita*/
+    width: 220px; /*controla el ancho de la cajita*/
     background-color: yellow;
     border-radius: 3%; /*Redondea los bordes de todo lo que se llama tarjeta*/
     text-align: center; /*alinea el texto de la cajita de la tarjeta al centro*/
@@ -33,9 +44,14 @@ h1{
     justify-content: center;
     align-items: center;
     margin: 10px; /*es el margen exterior de la caja y padding es el margen del contenido*/
+    padding: 12px;
+    border: 5px solid black;
     transition: all 0.3s ease-in-out; /*transición suave*/
 }
 
+.tarjeta .titulo-tarjeta{
+    margin-bottom: 10px;
+}
 /*Pseudo-clase para crear animaciones*/
 .tarjeta:hover{
     background-color: yellowgreen;
@@ -47,11 +63,13 @@ h1{
 /*Otra cosa que puedo hacer es darle estilo solo a la imagen de la tarjeta por ejemplo para que se vean los bordes*/
 .tarjeta .caja-imagen{
     width: 200px;
+    background-color: white;
 }
 
 /*Selectores avanzados son aquellos que siguen un caminito -- Uno dentro del otro, por ejemplo:*/
 .tarjeta img{
-    width: 100%; /*Aquí está ocupando el 100% del espacio de la cajita de .imagen*/
+    width: 150px; /*O puedo ponerle width: 100%; así estaría ocupando el 100% del espacio de la cajita de .imagen*/
+    height: 150px;
     object-fit: cover;
     border-radius: 5%;
 }
