@@ -1,0 +1,85 @@
+/*Selector universal
+Este selector, ayuda a que tu como creador de la página tengas el control de todo. Es decir que excluya las caracterísitcas por default. 
+Sirve para aplicar un estilo a todos los elementos de mi página.
+En este ejemplo, le quita los margencitos predeterminados a todo el doc .*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Selector de tipo ETIQUETA. Dice que a todo lo que sea (en este caso body) body aplicará las condiciones de estilo*/
+body{
+    background-color:#44BBEB;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    color: white;
+}
+
+/*Selector de tipo CLASE*/
+.tarjeta{
+    width: 320px; /*controla el ancho de la cajita*/
+    background-color: yellow;
+    border-radius: 3%; /*Redondea los bordes de todo lo que se llama tarjeta*/
+    text-align: center; /*alinea el texto de la cajita de la tarjeta al centro*/
+    /*Para centrar la imagen dentro de la cajita de la tarjeta:*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /*es el margen exterior de la caja y padding es el margen del contenido*/
+    transition: all 0.3s ease-in-out; /*transición suave*/
+}
+
+/*Pseudo-clase para crear animaciones*/
+.tarjeta:hover{
+    background-color: yellowgreen;
+    transform: scale(1.05);
+    transform: rotate(3deg);
+
+}
+
+/*Otra cosa que puedo hacer es darle estilo solo a la imagen de la tarjeta por ejemplo para que se vean los bordes*/
+.tarjeta .caja-imagen{
+    width: 200px;
+}
+
+/*Selectores avanzados son aquellos que siguen un caminito -- Uno dentro del otro, por ejemplo:*/
+.tarjeta img{
+    width: 100%; /*Aquí está ocupando el 100% del espacio de la cajita de .imagen*/
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+
+/*para darle instrucciones al párrafo dentro de la tarjeta puedo hacer eso:*/
+
+.tarjeta p{
+    font-size: 20px;
+}
+
+/*Selector de tipo ID*/
+#gato{
+    color: blue;
+}
+
+#perro{
+    color: green;
+}
+
+#loro{
+    color: purple;
+}
+
+#puma{
+    color: red;
+}
+
+#perezoso{
+    color: brown;
+}
