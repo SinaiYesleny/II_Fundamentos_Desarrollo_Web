@@ -1,10 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: white;
 }
 
+.caja{
+    width: 1256px;
+    height: 366px;
+    display: flex;
+}
+
 #caja-1
 {
-    width: 1400px;
-    height: 1076px;
-    background-color: #1e3932 ;
+background-color: #1e3932;
+}
+
+#caja-2
+{
+background-color: rgb(0, 68, 180);
+}
+
+#caja-3
+{
+background-color: rgb(213, 0, 50);
+}
+
+.caja h1{
+    font-size: 30px;
+}
+
+.caja img{
+    width: 628px;
+    height: 366px;
+}
+
+.caja .texto-caja{
+    /*Fuente de Google Fonts*/
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+    /*Otras características*/
+    color: white;
+    text-align: center;
+    /*Centrando texto*/
+    margin: auto;
+    padding: 80px;
+    font-size: 20px;
+}
+
+.caja-inferior{
+    width: 613px;
+    height: 727px;
+}
+
+.caja-inferior img{
+    width: 613px;
+    height: 511px;
+
+}
+
+.caja-inferior .texto-caja-inferior{
+    width: 613px;
+    height: 216px;
+    /*Fuente de Google Fonts*/
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+    /*Otras características*/
+    text-align: center;
+    /*Centrando texto*/
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 20px;
+}
+
+#caja-inferior-1{
+    background-color: pink;
+    color:  rgb(213, 0, 50);
+}
+
+#caja-inferior-2{
+    background-color: lightcyan;
+    color: blue
 }
