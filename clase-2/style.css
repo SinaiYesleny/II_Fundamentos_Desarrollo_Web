@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    margin: 20px;
     padding: 0;
 }
 
@@ -12,7 +11,7 @@ body{
     width: 1256px;
     height: 366px;
     display: flex;
-
+    margin: 0 auto;
 }
 
 #caja-verde
@@ -64,13 +63,13 @@ background-color: rgb(213, 0, 50);
 }
 
 #caja-inferior-1{
-    background-color: pink;
+    background-color: rgb(246, 191, 217);
     color:  rgb(213, 0, 50);
 }
 
 #caja-inferior-2{
-    background-color: lightcyan;
-    color: blue
+    background-color:  rgb(152, 205, 228);
+    color: rgb(0, 59, 73);
 }
 
 .caja-inferior .texto-caja-inferior{
@@ -80,6 +79,7 @@ background-color: rgb(213, 0, 50);
     font-weight: 300px;
     font-style: normal;
     /*Otras características*/
+    font-size: 20px;
     text-align: center;
     padding: 50px;
 }
@@ -90,4 +90,5 @@ background-color: rgb(213, 0, 50);
     /*margin: 20px 0px 20px 0px !important;*/
     width: 1256px;
     height: 366px;
-
+    margin: 0 auto;
+}
